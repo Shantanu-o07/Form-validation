@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="formContainer">
+        <h2>Registration Form</h2>
+        <form id="contactForm" action="#">
+            <div class="formControl">
+                <label for="userName">Username</label><br>
+                <input type="text" placeholder="Enter Username" name="userName" id="userName"><br>
+                <small>
+                    <p class="red">Username must be of at least 3 characters and at max 15 characters, Only Alphabets
+                        Allowed</p>
+                </small>
+            </div>
+            <div class="formControl">
+                <label for="email">Email</label><br>
+                <input type="text" placeholder="Enter Email" name="email" id="email"><br>
+                <small>
+                    <p class="red">Invalid Email</p>
+                </small>
+            </div>
+            <div class="formControl">
+                <label for="contactNumber">Contact Number</label><br>
+                <input type="text" placeholder="Enter Contact Number" name="contactNumber" id="contactNumber"><br>
+                <small>
+                    <p class="red">Contact Number Must Be 10 Digits</p>
+                </small>
+            </div>
+            <button type="submit" id="submit" value="Submit">Submit</button>
+        </form>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
